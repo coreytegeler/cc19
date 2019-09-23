@@ -1,0 +1,99 @@
+/*Selects the page's BODY tag */
+body {
+	font-family: sans-serif;
+	margin: 30px;
+}
+
+/*Selects all H1 */
+section {
+	width: 50%;
+	float: left;
+}
+
+/*Selects all H1 */
+h1 {
+	margin: 0;
+}
+
+/*Selects all H1 tags inside of an element with the ID "adventure"*/
+#adventure h1 {
+	font-size: 50px;
+}
+
+/*Selects anything with the class "adventure-1" */
+#adventure-1 {
+	opacity: 1;
+	margin-bottom: 0px;
+}
+#adventure-2 {
+	opacity: .60;
+}
+#adventure-3 {
+	opacity: .50;
+}
+#adventure-4 {
+	opacity: .40;
+}
+#adventure-5 {
+	opacity: .30;
+}
+#adventure-6 {
+	opacity: .16;
+}
+
+/*Selects all H1 tags inside of an element with the ID "hot-cold"*/
+#hot-cold h1 {
+	font-size: 80px;
+	margin: 0;
+	display: inline;
+    word-break: break-all;
+	hyphens: auto;
+}
+#hot {
+	color: red;
+}
+#humid {
+	color: orangered;
+}
+#sunny {
+	color: tomato;
+}
+#summers {
+	color: coral;
+}
+#humidity {
+	color: darkorange;
+}
+#warm {
+	color: salmon;
+}
+#cloudy {
+	color: lightcoral;
+}
+#dry {
+	color: orchid;
+}
+#damp {
+	color: plum;
+}
+#wet {
+	color: mediumpurple;
+}
+#windy {
+	color: mediumslateblue;
+}
+#foggy {
+	color: blueviolet;
+}
+#rainy {
+	color: royalblue;
+}
+#freezing {
+	color: dodgerblue;
+}
+#frost {
+	color: deepskyblue;
+}
+#cold {
+	color: lightskyblue;
+}

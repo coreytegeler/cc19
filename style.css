@@ -8,6 +8,8 @@
 html, body {
 	font-family: 'Arial Rounded MT Bold';
 	background-color: aliceblue;
+	font-size: 20px;
+	line-height: 25px;
 }
 
 * {
@@ -17,6 +19,19 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	margin: 10px;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 45px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 35px;
+}
+h3 {
+	font-size: 25px;
+	line-height: 30px;
 }
 
 a {
@@ -42,9 +57,26 @@ header, section {
 	display: flex;
     flex-wrap: wrap;
 }
+header {
+	color: blue;
+	border-color: blue;
+	background-color: rgba(0,0,255,.05);
+}
 
-section section {
-	
+section:nth-child(3n+1) {
+	color: red;
+	border-color: red;
+	background-color: rgba(255,0,0,.05);
+}
+section:nth-child(3n+2) {
+	color: green;
+	border-color: green;
+	background-color: rgba(0,255,0,.05);
+}
+section:nth-child(3n+3) {
+	color: blue;
+	border-color: blue;
+	background-color: rgba(0,0,255,.05);
 }
 
 ul, ol {
@@ -58,14 +90,82 @@ li {
 .outline {
 	padding: 15px;
 	margin: 5px;
-	border-width: 2px;
-	border-color: blue;
-	border-style: solid;
+	/*border-width: 2px;*/
+	/*border-color: blue;*/
+	/*border-style: solid;*/
 	border-radius: 50%;
 	text-decoration: none;
 	display: table;
 	float: left;
+	color: black;
 }
+a.outline:hover {
+	/*color: white;*/
+}
+
+.outline:nth-child(7n + 1) {
+	color: violet;
+	background-color: gold;
+}
+a.outline:nth-child(7n + 1):hover {
+	color: gold;
+	background-color: violet;
+}
+
+.outline:nth-child(7n + 2) {
+	color: coral;
+	background-color: steelblue;
+}
+a.outline:nth-child(7n + 2):hover {
+	color: steelblue;
+	background-color: coral;
+}
+
+.outline:nth-child(7n + 3) {
+	color: deeppink;
+	background-color: springgreen;
+}
+a.outline:nth-child(7n + 3):hover {
+	color: springgreen;
+	background-color: deeppink;
+}
+
+.outline:nth-child(7n + 4) {
+	color: navy;
+	background-color: lightskyblue;
+}
+a.outline:nth-child(7n + 4):hover {
+	color: lightskyblue; 
+	background-color: navy;
+}
+
+.outline:nth-child(7n + 5) {
+	color: black;
+	background-color: tan;
+}
+a.outline:nth-child(7n + 5):hover {
+	color: tan;
+	background-color: black;
+}
+
+.outline:nth-child(7n + 6) {
+	color: chartreuse;
+	background-color: orange;
+}
+a.outline:nth-child(7n + 6):hover {
+	color: orange;
+	background-color: chartreuse;
+}
+
+.outline:nth-child(7n + 7) {
+	color: yellow;
+	background-color: teal;
+}
+a.outline:nth-child(7n + 7):hover {
+	color: teal;
+	background-color: yellow;
+}
+
 .full {
 	width: 100%;
 }

@@ -87,6 +87,32 @@ li {
 	padding: 0 0 10px 0;
 }
 
+.links {
+	display: table;
+}
+
+.thumbs {
+	width: 100%;
+	margin: 30px 0;
+	display: table;
+}
+.thumb {
+	width: 10%;
+	min-width: 200px;
+	float: left;
+	margin: 5px;
+	text-decoration: none;
+}
+.thumb img {
+	width: 100%;
+}
+.thumb em {
+	font-size: 15px;
+	color: gray;
+	font-family: serif;
+	text-decoration: none;
+}
+
 .outline {
 	padding: 15px;
 	margin: 5px;

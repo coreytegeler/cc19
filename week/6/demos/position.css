@@ -20,7 +20,6 @@ body {
 
 .absolute {
 	width: 200px;
-	/*padding: 5px;*/
 	position: absolute;
 }
 
@@ -30,28 +29,28 @@ body {
 	position: fixed;
 }
 
-.one {
+#one {
 	 left: 15px;
 	 top: 100px;
 }
 
-.two {
+#two {
 	right: 0px;
 	bottom: 0px;	
 }
 
-.three {
+#three {
 	right: -100px;
 	top: -10px;	
 }
 
-.four {
+#four {
 	left: 10%;
 	top: 50%;	
 	height: 50%;
 }
 
-.five {
+#five {
 	right: 0;
 	top: 0;
 	height: 50%;

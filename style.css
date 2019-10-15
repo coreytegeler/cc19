@@ -115,6 +115,7 @@ li {
 }
 .thumb em {
 	font-size: 15px;
+	line-height: 15px;
 	color: gray;
 	font-family: serif;
 	text-decoration: none;
@@ -123,17 +124,15 @@ li {
 .outline {
 	padding: 15px;
 	margin: 5px;
-	/*border-width: 2px;*/
-	/*border-color: blue;*/
-	/*border-style: solid;*/
 	border-radius: 50%;
 	text-decoration: none;
 	display: table;
 	float: left;
 	color: black;
+	transition: color 500ms ease, background 500ms ease;
 }
 a.outline:hover {
-	/*color: white;*/
+	
 }
 
 .outline:nth-child(7n + 1) {

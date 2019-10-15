@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+}
+.cell {
+	width: 10vw;
+	height: 10vw;
+	float: left;
+	border-radius: 50%;
+	transform: scale(1.5);
+	transition: background-color 100ms ease-in-out, transform 1000ms ease-in-out;
+}
+.cell:hover {
+	cursor: pointer;
+	transform: scale(15);
+}
+
+
+
+.cell.one {
+	background-color: gold;
+}
+.cell.one:hover {
+	background-color: lightskyblue;
+}
+
+
+
+.cell.two {
+	background-color: steelblue;
+}
+.cell.two:hover {
+	background-color: violet;
+}
+
+
+
+.cell.three {
+	background-color: springgreen;
+}
+.cell.three:hover {
+	background-color: coral;
+}
+
+
+.cell.four {
+	background-color: deeppink;
+}
+.cell.four:hover {
+	background-color: orange;
+}

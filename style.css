@@ -42,6 +42,13 @@ a {
 	display: inline;
 }
 
+.inactive {
+	opacity: .2;
+	filter: grayscale(1);
+	pointer-events: none;
+	text-decoration: line-through !important;
+}
+
 header {
 
 }

@@ -26,17 +26,25 @@ html, body {
 	position: relative;
 	overflow: hidden; 
 	animation: pan 3s 1 linear 1.5s forwards;
+	-moz-animation: pan 3s 1 linear 1.5s forwards;
+	-webkit-animation: pan 3s 1 linear 1.5s forwards;
 }
 
 @keyframes pan {
 	0%{
 		transform: translate(0);
+		-moz-transform: translate(0);
+		-webkit-transform: translate(0);
 	}
 	60% {
 		transform: translate(-40vw);
+		-moz-transform: translate(-40vw);
+		-webkit-transform: translate(-40vw);
 	}
 	100% {
 		transform: translate(-100vw);	
+		-moz-transform: translate(-100vw);	
+		-webkit-transform: translate(-100vw);	
 	}
 }
 
@@ -57,8 +65,9 @@ img {
 
 #glove {
 	width: 10rem;
-	animation: jiggle .3s 4 ease-in-out,
-						 punch 1s 1 ease-in-out 1s;
+	animation: jiggle .3s 4 ease-in-out, punch 1s 1 ease-in-out 1s;
+	-moz-animation: jiggle .3s 4 ease-in-out, punch 1s 1 ease-in-out 1s;
+	-webkit-animation: jiggle .3s 4 ease-in-out, punch 1s 1 ease-in-out 1s;
 	position: relative;
 	left: 0;
 	top: 5vw;
@@ -68,9 +77,13 @@ img {
 @keyframes jiggle {
 	0%, 100% {
 		transform: rotate(-10deg);
+		-moz-transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
 	}
 	50% {
 		transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
 	}
 }
 
@@ -84,6 +97,8 @@ img {
 	100% {
 		left: 0;
 		animation: none;
+		-moz-animation: none;
+		-webkit-animation: none;
 	}
 }
 
@@ -92,8 +107,9 @@ img {
 
 #ball {
 	width: 10rem;
-	animation: roll 2s 1 ease-out 1.4s forwards,
-						 punched 2.2s 1 ease-out 1.4s forwards;
+	animation: roll 2s 1 ease-out 1.4s forwards, punched 2.2s 1 ease-out 1.4s forwards;
+	-moz-animation: roll 2s 1 ease-out 1.4s forwards, punched 2.2s 1 ease-out 1.4s forwards;
+	-webkit-animation: roll 2s 1 ease-out 1.4s forwards, punched 2.2s 1 ease-out 1.4s forwards;
 	position: absolute;
 	left: 17rem;
 	top: 3rem;
@@ -103,9 +119,13 @@ img {
 @keyframes roll {
 	0% {
 		transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 	100% {
 		transform: rotate(540deg);
+		-moz-transform: rotate(540deg);
+		-webkit-transform: rotate(540deg);
 	}
 }
 
@@ -141,6 +161,8 @@ img {
 	left: 50rem;
 	top: 31rem;
 	animation: seesawed .2s ease-in-out 3.3s forwards;
+	-moz-animation: seesawed .2s ease-in-out 3.3s forwards;
+	-webkit-animation: seesawed .2s ease-in-out 3.3s forwards;
 }
 
 @keyframes seesawed {
@@ -149,6 +171,8 @@ img {
 	}
 	100% {
 		transform: rotate(-30deg);
+		-moz-transform: rotate(-30deg);
+		-webkit-transform: rotate(-30deg);
 	}
 }
 
@@ -158,9 +182,11 @@ img {
 #seeds {
 	width: 10rem;
 	animation: bounce 1.25s ease-in-out 3.3s forwards;
+	-moz-animation: bounce 1.25s ease-in-out 3.3s forwards;
+	-webkit-animation: bounce 1.25s ease-in-out 3.3s forwards;
 	position: absolute;
 	left: 66rem;
-  top: 28rem;
+	top: 28rem;
 	z-index: 2;
 }
 
@@ -183,11 +209,15 @@ img {
 #jack {
 	height: 100vh;
 	animation: jump .3s ease-in-out 4.5s forwards;
+	-moz-animation: jump .3s ease-in-out 4.5s forwards;
+	-webkit-animation: jump .3s ease-in-out 4.5s forwards;
 	position: absolute;
 	z-index: 2;
 	right: 0;
-  top: 100rem;
+	top: 100rem;
 	transform: scale(.2);
+	-moz-transform: scale(.2);
+	-webkit-transform: scale(.2);
 }
 #jack img {
 	width: auto;
@@ -197,18 +227,24 @@ img {
 @keyframes jump {
 	0% {
 		right: 0;
-	  top: 100vh;
-	  transform: scale(.2);
+		top: 100vh;
+		transform: scale(.2);
+		-moz-transform: scale(.2);
+		-webkit-transform: scale(.2);
 	}
 	50% {
 		right: 0;
-	  top: -3rem;
+		top: -3rem;
 		transform: scale(1);
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
 	}
 	100% {
 		right: 0;
-	  top: 0rem;
+		top: 0rem;
 		transform: scale(1);
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
 	}
 }
 
@@ -218,23 +254,35 @@ img {
 	left: 0;
 	top: 3rem;
 	z-index: 3;
-  transform: scale(.2);
-  animation: boo .4s ease-in-out 4.7s forwards;
-  font-size: 15rem;
-  text-align: center;
-  font-weight: bolder;
-  mix-blend-mode: overlay;
-  text-shadow: 0 0 20px black;
-  transform: scale(0);
+	transform: scale(.2);
+	-moz-transform: scale(.2);
+	-webkit-transform: scale(.2);
+	animation: boo .4s ease-in-out 4.7s forwards;
+	-moz-animation: boo .4s ease-in-out 4.7s forwards;
+	-webkit-animation: boo .4s ease-in-out 4.7s forwards;
+	font-size: 15rem;
+	text-align: center;
+	font-weight: bolder;
+	mix-blend-mode: overlay;
+	text-shadow: 0 0 20px black;
+	transform: scale(0);
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
 }
 @keyframes boo {
 	0% {
-	  transform: scale(0);
+		transform: scale(0);
+		-moz-transform: scale(0);
+		-webkit-transform: scale(0);
 	}
 	50% {
 		transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
 	}
 	100% {
 		transform: scale(1);
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
 	}
 }

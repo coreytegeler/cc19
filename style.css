@@ -130,6 +130,8 @@ li {
 	float: left;
 	color: black;
 	transition: color 500ms ease, background 500ms ease;
+	-moz-transition: color 500ms ease, background 500ms ease;
+	-webkit-transition: color 500ms ease, background 500ms ease;
 }
 a.outline:hover {
 	

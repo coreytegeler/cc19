@@ -1,0 +1,38 @@
+html, body {
+	font-family: "Arial Rounded", Arial;
+	margin: auto;
+	background: black;
+}
+.cell {
+	width: 8vw;
+	height: 8vw;
+	float: left;
+	transition: all 200ms ease-in-out;
+	background: peru;
+	overflow-y: hidden;
+}
+.cell:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+.grass, .soil:hover {
+	background: forestgreen;
+}
+.grass:hover {
+	opacity: 0.8;
+}
+.sprout {
+	width: .5vw;
+	height: .5vw;
+	margin: .3vw;
+	background: orange;
+	float: left;
+}
+.sprout:hover {
+	opacity: 0.8;
+}
+
+.sprout.grow {
+	width: 1vw;
+	height: 1vw;
+}

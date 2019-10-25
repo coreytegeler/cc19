@@ -38,6 +38,7 @@ $(document).ready(function() {
 	var growSproutBigger = function() {
 		// Adds the class "bigger" to the div that was just clicked
 		$(this).addClass("bigger");
+		// "Listens" for this to be clicked to run the function growSproutBiggest
 		$(this).click(growSproutBiggest);
 	}
 
@@ -45,6 +46,14 @@ $(document).ready(function() {
 	var growSproutBiggest = function() {
 		// Adds the class "biggest" to the div that was just clicked
 		$(this).addClass("biggest");
+		// "Listens" for this to be clicked to run the function removeSprout
+		$(this).click(removeSprout);
+	}
+
+	// Defines the function removeSprout
+	var removeSprout = function() {
+		// Removes the element from the page
+		$(this).remove();
 	}
 
 

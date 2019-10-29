@@ -20,8 +20,8 @@ $(document).ready(function() {
 	var critters = $(".critter");
 	$.each(critters, function(index, critter) {
 		var rotate = Math.random() * (30);
-		var x = Math.random() * (windowWidth);
-		var y = Math.random() * (windowHeight*.5);
+		var x = Math.random() * windowWidth;
+		var y = Math.random() * windowHeight;
 		$(critter).css({
 			transform: "rotate("+rotate+"deg)",
 			left: x+"px",

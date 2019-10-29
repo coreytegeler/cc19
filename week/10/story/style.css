@@ -49,12 +49,17 @@ figcaption {
 	mix-blend-mode: hue;
 }
 .critter {
-	position: relative;
+	position: absolute;
 	transition: opacity 3000ms ease;
 }
+
 .critter:nth-child(odd) img {
-	transform: rotateY(180deg);
+	animation: swimLeft 50000ms linear;
 }
+.critter:nth-child(even) img {
+	animation: swimRight 50000ms linear;
+}
+
 .shrimp {
 	width: 50px;
 }
@@ -62,3 +67,19 @@ figcaption {
 	width: 300px;
 }
 
+@keyframes swimLeft {
+	0% {
+		
+	}
+	100% {
+		transform: translateX(-100vw);
+	}
+}
+@keyframes swimRight {
+	0% {
+		transform: rotateY(180deg);
+	}
+	100% {
+		transform: rotateY(180deg) translateX(-100vw);
+	}
+}

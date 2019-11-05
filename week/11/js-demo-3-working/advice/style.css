@@ -1,0 +1,56 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 29px;
+}
+
+
+main {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#advice-stand {
+	display: table;
+	margin: auto;
+	position: relative;
+}
+
+#lucy {
+	margin-bottom: 30px;
+}
+#lucy img {
+	width: 600px;
+}
+
+#advice-box {
+	width: 520px;
+	height: 180px;
+	position: absolute;
+	top: 34px;
+	left: 38px;
+	transform: rotate(2deg);
+	overflow-y: scroll;
+	display: flex;
+}
+#advice-text {
+	display: table;
+	margin: auto;
+}
+
+#button {
+	display: table;
+	margin: auto;
+	text-align: center;
+	padding: 5px 15px;
+	border: 4px solid black;
+	border-radius: 28px;
+}
+#button:hover {
+	cursor: pointer;
+}

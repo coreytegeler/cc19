@@ -207,3 +207,13 @@ a.outline:nth-child(7n + 7):hover {
 	width: 48%;
 	float: left;
 }
+.half.center {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+#project a {
+	display: table;
+	margin: auto;
+}

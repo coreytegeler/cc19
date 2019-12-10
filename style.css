@@ -217,3 +217,17 @@ a.outline:nth-child(7n + 7):hover {
 	display: table;
 	margin: auto;
 }
+
+#randomize-this {
+	width: 70%;
+	margin: auto;
+}
+
+#randomize {
+	width: auto;
+	display: table;
+	margin: .25em auto;
+	padding: 1em;
+	cursor: pointer;
+	color: green;
+}
